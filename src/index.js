@@ -5,6 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//manual styling
+import './styling/LPage.css' 
+import './styling/copyField.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

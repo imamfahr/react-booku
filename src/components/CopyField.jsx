@@ -1,4 +1,6 @@
 import React,{useRef, useState} from 'react'
+import { Container, Row, Col} from "react-bootstrap";
+import Button from './Button'
 
 import '../styling/copyField.css'
 
@@ -19,10 +21,17 @@ function CopyField(props) {
     
 
     return (
-        <div>
-            <textarea type='text' ref = {textAreaRef} value={props.value} className='copy-field' rows="5" cols="33" wrap="hard"></textarea>
-            <button onClick={copyToClipboard}>copy text</button>
-        </div>
+
+        <Col className='p-2' center="lg" >
+        {/* <div className='search-bar'>  */}
+           
+                <Row>
+                <textarea type='text' ref = {textAreaRef} value={props.value} className='copy-field' rows="5" cols="33" wrap="hard"></textarea>
+                <button onClick={copyToClipboard} className='copy-to-clipboard'ame='copy citation' >copy citation</button>
+                </Row>
+        {/* </div> */}
+        </Col>
+        
     )
 }
 

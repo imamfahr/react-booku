@@ -10,17 +10,17 @@ import ReadingPage from './pages/ReadingPage'
 import Lpage from './pages/LPage'
 
 //components
-import Navbar from './components/Navbar'
+import Header from './components/Navbar'
 
 function App() {
   return (
     <BrowserRouter>
     <div>
-      <Navbar />
+      <Header />
 
       <Switch>
         <Route exact path = '/'>
-          <LPage />
+          <Lpage />
         </Route>
         <Route path = '/find-books'>
           <Home />

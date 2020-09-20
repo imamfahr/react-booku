@@ -1,6 +1,41 @@
 .copy-field{
-    width: 300px;
-    height: 200px;
+    width: 85%;
+    height: 37px;
     word-wrap: break-word;
     
 }
+
+.search-bar{
+    width: 85%;
+    height: 37px;
+
+}
+
+.card-author{
+    font-size: 18px;
+}
+
+.card-year{
+    font-size: 16px;
+}
+
+.card-publisher{
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  
+    .copy-field{
+        width: 60%;
+        height: 37px;
+        word-wrap: break-word;
+        
+    }
+    
+    .search-bar{
+        width: 60%;
+        height: 37px;
+    
+    }
+    
+  }
