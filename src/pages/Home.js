@@ -36,21 +36,18 @@ function Home(props) {
 
 
     
-    const callCards = (cardData) => {
-
-        const takeBookData = (e) =>{
-            setGetBookData(props.title)
-        }
+    const callCards = (cardData,index) => {
 
         return(
             
             <BookCard
+            key={index}
             title = {cardData.volumeInfo.title}
             author ={cardData.volumeInfo.authors}
             img = {cardData.volumeInfo.imageLinks.thumbnail}
             yearPublished={cardData.volumeInfo.publishedDate}
             publisher = {cardData.volumeInfo.publisher}
-            takeBookData = {takeBookData}
+            setGetBookData = {setGetBookData}
             />
         )
     }

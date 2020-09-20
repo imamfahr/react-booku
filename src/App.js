@@ -7,6 +7,7 @@ import {Browser, Switch, Route, BrowserRouter} from 'react-router-dom'
 import Home from './pages/Home'
 import ReadingList from './pages/RadingList'
 import ReadingPage from './pages/ReadingPage'
+import Lpage from './pages/LPage'
 
 //components
 import Navbar from './components/Navbar'
@@ -19,6 +20,9 @@ function App() {
 
       <Switch>
         <Route exact path = '/'>
+          <LPage />
+        </Route>
+        <Route path = '/find-books'>
           <Home />
         </Route>
         <Route path = '/reading-list'>
