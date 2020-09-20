@@ -16,7 +16,7 @@ function LPage() {
             
             <div className='landing-page-welcoming'>
             <div className='content-lp assistant'>Write your reference in just one click</div> 
-            <button class='pre-styled-button lp-button poiret'><Link to = '/find-books' class='text-deco-none'>find book</Link></button>
+            <button class='pre-styled-button lp-button poiret'><Link to = '/find-books' class='text-deco-none'>find books</Link></button>
             </div> 
                
             
